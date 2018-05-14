@@ -1,1 +1,1 @@
-from simulator.interfaceSimulatorTkinter import *
+from simulator.interfaceSimulator import *
