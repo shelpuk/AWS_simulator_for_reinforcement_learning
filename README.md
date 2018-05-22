@@ -4,7 +4,7 @@ This is AWS virtual infrastructure simulator for building automated infrastructu
 
 This is AWS virtual infrastructure simulator for building automated infrastructure control systems. Primarily it is designed for training reinforcement learning controllers but could be used for any other approaches as well. This simulator was used by a startup company QRhythm for training its AWS capacity management system.
 
-The business case simulated is the following. You have an application such as e-commerce web-site or online game and host it on AWS. You use AWS EC2 and Spot instances. They all are located behind AWS load balancer so that you can increase or shrink your cloud capacity.
+The business case simulated is the following. You have an application such as e-commerce web-site or online game and host it on AWS. You use AWS [EC2](https://aws.amazon.com/ec2/) and [Spot](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/how-spot-instances-work.html) instances. They all are located behind [AWS load balancer](https://aws.amazon.com/elasticloadbalancing/) so that you can increase or shrink your cloud capacity.
 
 However, there are a number of uncertainties there. 
 - The instance becomes operational in roughly 20 min but not exactly, each time this time vary a little bit because of the internal dynamics of AWS virtualization software.
@@ -15,3 +15,4 @@ However, there are a number of uncertainties there.
 The simulator simulates running such a setup with all these uncertainties. You can run it in automated mode where the simulation takes a traffic pattern from a real cloud application or in a manual mode where you can control these uncertainties by yourself.
 ![picture alt](https://github.com/shelpuk/AWS_simulator_for_reinforcement_learning/blob/master/img/Cloud_Simulator.png)
 
+## Components
