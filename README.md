@@ -13,5 +13,5 @@ However, there are a number of uncertainties there.
 - Spot instances are cheap but they can be taken away from you any time if someone offers a better price. The demand for Spots vary over time so the probability of Spot instance failure changes over time.
 
 The simulator simulates running such a setup with all these uncertainties. You can run it in automated mode where the simulation takes a traffic pattern from a real cloud application or in a manual mode where you can control these uncertainties by yourself.
-
 ![picture alt](https://github.com/shelpuk/AWS_simulator_for_reinforcement_learning/blob/master/img/Cloud_Simulator.png)
+
