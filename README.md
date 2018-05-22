@@ -16,3 +16,8 @@ The simulator simulates running such a setup with all these uncertainties. You c
 ![picture alt](https://github.com/shelpuk/AWS_simulator_for_reinforcement_learning/blob/master/img/Cloud_Simulator.png)
 
 ## Components
+The environment consists of the following components.
+- **interfaceSimulator.py** implements simulator of AWS infrastructure including all uncertainties described above.
+- **controller.py** implements control logic. Predefine for using reinforcement learning controller.
+- **full_balancer_model_normal.csv** contains a data for simulating load on your application in requests per second.
+- **control.py** is a script for running the simulation.
