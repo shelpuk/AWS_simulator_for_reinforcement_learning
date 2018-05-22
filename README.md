@@ -17,7 +17,29 @@ The simulator simulates running such a setup with all these uncertainties. You c
 ![picture alt](https://github.com/shelpuk/AWS_simulator_for_reinforcement_learning/blob/master/img/Cloud_Simulator.png)
 
 ## How to start
+To start, please download the repository and run:
+```console
+$ python control.py
+```
 
+You can also run the controller from the inside of your own code. In order to do that you need to specify a simulator as an interface to AWS cloud and define if you want to simulate the behavior of a real cloud application which is provided along with the simulator ()
+
+```python
+from simulator import interfaceSimulator
+import controller
+
+generator = interfaceSimulator(files=['data/full_balancer_model_normal.csv'], #a file or files describing user behavior
+                                         timeframe=10, #number of minutes per simulator step
+                                         initialServers=[4,4]) #initial number of EC2 and Spot virtual machines
+                                         
+ctrl = controller.controller(interface=generator, #interface to the AWS cloud or a simulator
+                             plotHistory = 30, #number of steps to be shown on a plot
+                             mode='A') #the mode of operation
+
+ctrl.control(numSteps=50000, #number of steps to run
+             verbose=5, #how much of information to show
+             delay=0.) #additional delays between steps
+```
 
 ## Components
 The environment consists of the following components.
