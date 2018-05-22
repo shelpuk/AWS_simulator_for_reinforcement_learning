@@ -1,4 +1,4 @@
-# AWS_simulator_for_reinforcement_learning
+# AWS simulator for reinforcement learning
 
 This is AWS virtual infrastructure simulator for building automated infrastructure control systems. Primarily it is designed for training reinforcement learning controllers but could be used for any other approaches as well.
 
