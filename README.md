@@ -3,7 +3,7 @@
 
 This is AWS virtual infrastructure simulator for building automated infrastructure control systems. Primarily it is designed for training reinforcement learning controllers but could be used for any other approaches as well.
 
-This is AWS virtual infrastructure simulator for building automated infrastructure control systems. Primarily it is designed for training reinforcement learning controllers but could be used for any other approaches as well. This simulator was used by a startup company QRhythm for training its AWS capacity management system.
+This is AWS virtual infrastructure simulator for building automated infrastructure control systems. Primarily it is designed for training reinforcement learning controllers but could be used for any other approaches as well. This simulator was used by a startup company QRhythm for training its AWS capacity management system. In 2016, Google DeepMind built a system for a [similar problem of managing datacenter capacity](https://deepmind.com/blog/deepmind-ai-reduces-google-data-centre-cooling-bill-40/).
 
 The business case simulated is the following. You have an application such as e-commerce web-site or online game and host it on AWS. You use AWS [EC2](https://aws.amazon.com/ec2/) and [Spot](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/how-spot-instances-work.html) instances. They all are located behind [AWS load balancer](https://aws.amazon.com/elasticloadbalancing/) so that you can increase or shrink your cloud capacity.
 
