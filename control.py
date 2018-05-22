@@ -1,4 +1,4 @@
-from simulator import interfaceSimulator as interface
+from simulator import interfaceSimulator
 import controller
 
 # Generator is a simulator interface of AWS cloud management. In order to set up the simulatior
@@ -7,7 +7,9 @@ import controller
 # When setting up the simulator you also describe timeframe (how often the system checks the status
 # of the infrastructure, minutes) and initial number of virtual machines (VMs) of both types (EC2 and Spot).
 
-generator = interface.interfaceSimulator(files=['data/full_balancer_model_normal.csv'],
+
+
+generator = interfaceSimulator(files=['data/full_balancer_model_normal.csv'],
                                          timeframe=10,
                                          initialServers=[4,4])
 
@@ -19,7 +21,7 @@ generator = interface.interfaceSimulator(files=['data/full_balancer_model_normal
 # you control the simulation on your own. In automatic mode (mode='A') the simulater simulates the behavior of
 # the system described in simulator files.
 
-ctrl = controller.controller(interface=generator, plotHistory = 30, mode='M')
+ctrl = controller.controller(interface=generator, plotHistory = 30, mode='A')
 
 # After the controller is set up, you can run it by using control() method. Control() method requires
 # number of steps to run, verbose (how much debug data to show) and delay between steps. If the system runs too
