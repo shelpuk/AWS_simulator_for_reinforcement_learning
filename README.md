@@ -14,4 +14,4 @@ However, there are a number of uncertainties there.
 
 The simulator simulates running such a setup with all these uncertainties. You can run it in automated mode where the simulation takes a traffic pattern from a real cloud application or in a manual mode where you can control these uncertainties by yourself.
 
-[AWS simulator in autonomous mode](https://github.com/shelpuk/AWS_simulator_for_reinforcement_learning/blob/master/img/Cloud_Simulator.png)
+![picture alt](https://github.com/shelpuk/AWS_simulator_for_reinforcement_learning/blob/master/img/Cloud_Simulator.png)
