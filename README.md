@@ -28,7 +28,7 @@ You can also run the controller from the inside of your own code. In order to do
 from simulator import interfaceSimulator
 import controller
 
-generator = interfaceSimulator(files=['data/full_balancer_model_normal.csv'], #a file or files describing user behavior
+generator = interfaceSimulator(files=['data/full_balancer_model_normal.csv'], #a file describing user behavior
                                          timeframe=10, #number of minutes per simulator step
                                          initialServers=[4,4]) #initial number of EC2 and Spot virtual machines
                                          
