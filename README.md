@@ -1,4 +1,10 @@
 # AWS simulator for reinforcement learning
+![Python versions: 3.4, 3.5, 3.6](https://img.shields.io/pypi/pyversions/Django.svg) 
+![Status: stable](https://img.shields.io/pypi/status/Django.svg)
+![License: MIT](https://img.shields.io/apm/l/vim-mode.svg)
+
+
+
 
 This is AWS virtual infrastructure simulator for building automated infrastructure control systems. Primarily it is designed for training reinforcement learning controllers but could be used for any other approaches as well.
 
@@ -15,9 +21,15 @@ However, there are a number of uncertainties there.
 The simulator simulates running such a setup with all these uncertainties. You can run it in automated mode where the simulation takes a traffic pattern from a real cloud application or in a manual mode where you can control these uncertainties with simple user interface.
 ![picture alt](https://github.com/shelpuk/AWS_simulator_for_reinforcement_learning/blob/master/img/Cloud_Simulator.png)
 
+## How to start
+
+
 ## Components
 The environment consists of the following components.
 - **interfaceSimulator.py** implements simulator of AWS infrastructure including all uncertainties described above.
 - **controller.py** implements control logic. Predefine for using reinforcement learning controller.
 - **full_balancer_model_normal.csv** contains a data for simulating load on your application in requests per second.
 - **control.py** is a script for running the simulation.
+
+## Useful methods
+You may need the following methods in order to 
