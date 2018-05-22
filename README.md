@@ -1,10 +1,5 @@
 # AWS simulator for reinforcement learning
-![Python versions: 3.4, 3.5, 3.6](https://img.shields.io/pypi/pyversions/Django.svg) 
-![Status: stable](https://img.shields.io/pypi/status/Django.svg)
-![License: MIT](https://img.shields.io/apm/l/vim-mode.svg)
-
-
-
+![Python versions: 3.4, 3.5, 3.6](https://img.shields.io/pypi/pyversions/Django.svg) ![Status: stable](https://img.shields.io/pypi/status/Django.svg) ![License: MIT](https://img.shields.io/apm/l/vim-mode.svg)
 
 This is AWS virtual infrastructure simulator for building automated infrastructure control systems. Primarily it is designed for training reinforcement learning controllers but could be used for any other approaches as well.
 
