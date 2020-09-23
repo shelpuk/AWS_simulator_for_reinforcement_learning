@@ -7,11 +7,9 @@ import controller
 # When setting up the simulator you also describe timeframe (how often the system checks the status
 # of the infrastructure, minutes) and initial number of virtual machines (VMs) of both types (EC2 and Spot).
 
-
-
 generator = interfaceSimulator(files=['data/full_balancer_model_normal.csv'], #interface to the AWS cloud or a simulator
-                                         timeframe=10, #number of steps to be shown on a plot
-                                         initialServers=[4,4]) #the mode of operation
+                               timeframe=10, #number of steps to be shown on a plot
+                               initialServers=[4,4]) #the mode of operation
 
 # Controller is a class implementing infrastructure control logic. It requires an interface to
 # the AWS cloud management (here, the simulator), number of steps you want it to collect historical records
