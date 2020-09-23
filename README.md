@@ -42,15 +42,15 @@ ctrl.control(numSteps=50000, #number of steps to run
 ## How to write your own control logic
 Here are the methods of the controller that you may need to implement your own control logic.
 
-- controller.control() - starts the simulation under the control of your algorithm.
-- controller.takeAction() - performs one of the possible actions for cloud infrastructure management.
-- controller.getNextState() - performs one simulation step. Returns the state of the infrastructure after taking action.
-- controller.getCost() - returns the received reward (in our case, it will be a negative reward - the money spent on the system).
-- controller.getFeatures() - returns the features of the state and action. Here you can define the features your model will use.
-- controller.estimateBestAction() - returns the action to take for every state.
-- controller.setSpotFailureProbability() - sets the Spot instance failure probability. The probability is the same for all Spot instances.
-- controller.setSpotHourlyPrice() - sets the hourly cost for Spot instances. The price is the same for all Spot instances.
-- controller.setOverloadCost() - sets the penalty for one user request that will be delayed or not processed due to your infrastructure's overloading. Here, the penalty should be set in the same currency as the price of the instance.
+- **controller.control()** - starts the simulation under the control of your algorithm.
+- **controller.takeAction()** - performs one of the possible actions for cloud infrastructure management.
+- **controller.getNextState()** - performs one simulation step. Returns the state of the infrastructure after taking action.
+- **controller.getCost()** - returns the received reward (in our case, it will be a negative reward - the money spent on the system).
+- **controller.getFeatures()** - returns the features of the state and action. Here you can define the features your model will use.
+- **controller.estimateBestAction()** - returns the action to take for every state.
+- **controller.setSpotFailureProbability()** - sets the Spot instance failure probability. The probability is the same for all Spot instances.
+- **controller.setSpotHourlyPrice()** - sets the hourly cost for Spot instances. The price is the same for all Spot instances.
+- **controller.setOverloadCost()** - sets the penalty for one user request that will be delayed or not processed due to your infrastructure's overloading. Here, the penalty should be set in the same currency as the price of the instance.
 
 You can start with the controller.estimateBestAction () method. It implements a simple control algorithm that starts one EC2 machine if the load utilizes more than 80% of the current resources are and stops one EC2 machine if the load falls below 50%. Otherwise, it does nothing.
 
