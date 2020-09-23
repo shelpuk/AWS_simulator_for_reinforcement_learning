@@ -39,6 +39,9 @@ ctrl.control(numSteps=50000, #number of steps to run
              delay=0.) #additional delays between steps
 ```
 
+If you create a `controller` object with `mode='M'`, the system will give you a visual "Cloud Controller" control interface to control the simulation manually in real-time.
+![picture alt](https://github.com/shelpuk/AWS_simulator_for_reinforcement_learning/blob/master/img/Cloud_Controller.png)
+
 ## How to write your own control logic
 Here are the methods of the controller that you may need to implement your own control logic.
 
