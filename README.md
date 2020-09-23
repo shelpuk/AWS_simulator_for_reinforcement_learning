@@ -12,7 +12,7 @@ However, there are many uncertainties there.
 - Spot instances are cheap, but they can be taken away from you any time if someone offers a better price. The demand for Spots varies over time, so the probability of Spot instance failure changes over time.
 
 The simulator simulates running such a setup with all these uncertainties. You can run it in an automated mode where the simulation takes a traffic pattern from a real cloud application or in a manual mode where you can control these uncertainties with a simple user interface.
-![picture alt](https://github.com/shelpuk/AWS_simulator_for_reinforcement_learning/blob/master/img/Cloud_Simulator.png)
+![Cloud Simulator](https://github.com/shelpuk/AWS_simulator_for_reinforcement_learning/blob/master/img/Cloud_Simulator.png)
 
 ## How to start
 To start, please download the repository and run:
@@ -40,7 +40,8 @@ ctrl.control(numSteps=50000, #number of steps to run
 ```
 
 If you create a `controller` object with `mode='M'`, the system will give you a visual "Cloud Controller" control interface to control the simulation manually in real-time.
-![picture alt](https://github.com/shelpuk/AWS_simulator_for_reinforcement_learning/blob/master/img/Cloud_Controller.png)
+
+![Cloud Controller](https://github.com/shelpuk/AWS_simulator_for_reinforcement_learning/blob/master/img/Cloud_Controller.png)
 
 ## How to write your own control logic
 Here are the methods of the controller that you may need to implement your own control logic.
