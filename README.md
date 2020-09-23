@@ -27,8 +27,8 @@ from simulator import interfaceSimulator
 import controller
 
 generator = interfaceSimulator(files=['data/full_balancer_model_normal.csv'], #a file describing user behavior
-                                         timeframe=10, #number of minutes per simulator step
-                                         initialServers=[4,4]) #initial number of EC2 and Spot virtual machines
+                               timeframe=10, #number of minutes per simulator step
+                               initialServers=[4,4]) #initial number of EC2 and Spot virtual machines
                                          
 ctrl = controller.controller(interface=generator, #interface to the AWS cloud or a simulator
                              plotHistory = 30, #number of steps to be shown on a plot

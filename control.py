@@ -9,7 +9,7 @@ import controller
 
 generator = interfaceSimulator(files=['data/full_balancer_model_normal.csv'], #interface to the AWS cloud or a simulator
                                timeframe=10, #number of steps to be shown on a plot
-                               initialServers=[4,4]) #the mode of operation
+                               initialServers=[4,4]) #initial number of virtual machines (VMs) of both types (EC2 and Spot)
 
 # Controller is a class implementing infrastructure control logic. It requires an interface to
 # the AWS cloud management (here, the simulator), number of steps you want it to collect historical records
@@ -21,7 +21,7 @@ generator = interfaceSimulator(files=['data/full_balancer_model_normal.csv'], #i
 
 ctrl = controller.controller(interface=generator, #number of steps to run
                              plotHistory=30, #how much of information to show
-                             mode='M') #additional delays between steps
+                             mode='M') #the mode of the simulator
 
 # After the controller is set up, you can run it by using control() method. Control() method requires
 # number of steps to run, verbose (how much debug data to show) and delay between steps. If the system runs too
