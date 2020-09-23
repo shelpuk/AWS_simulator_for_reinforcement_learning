@@ -56,7 +56,7 @@ Here are the methods of the controller that you may need to implement your own c
 - **controller.setSpotHourlyPrice()** - sets the hourly cost for Spot instances. The price is the same for all Spot instances.
 - **controller.setOverloadCost()** - sets the penalty for one user request that will be delayed or not processed due to your infrastructure's overloading. Here, the penalty should be set in the same currency as the price of the instance.
 
-You can start with the controller.estimateBestAction () method. It implements a simple control algorithm that starts one EC2 machine if the load utilizes more than 80% of the current resources are and stops one EC2 machine if the load falls below 50%. Otherwise, it does nothing.
+You can start with the `controller.estimateBestAction()` method. It implements a simple control algorithm that starts one EC2 machine if the load utilizes more than 80% of the current resources are and stops one EC2 machine if the load falls below 50%. Otherwise, it does nothing.
 
 This simulator supports all possible reinforcement learning algorithms, including [deep reinforcement learning](https://deepmind.com/blog/article/deep-reinforcement-learning) and [PEGASUS](https://ai.stanford.edu/~ang/papers/uai00-pegasus.pdf).
 
