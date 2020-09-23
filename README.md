@@ -54,7 +54,7 @@ Here are the methods of the controller that you may need to implement your own c
 
 You can start with the controller.estimateBestAction () method. It implements a simple control algorithm that starts one EC2 machine if the load utilizes more than 80% of the current resources are and stops one EC2 machine if the load falls below 50%. Otherwise, it does nothing.
 
-This simulator supports all possible reinforcement learning algorithms, including deep reinforcement learning and PEGASUS.
+This simulator supports all possible reinforcement learning algorithms, including [deep reinforcement learning](https://deepmind.com/blog/article/deep-reinforcement-learning) and [PEGASUS](https://ai.stanford.edu/~ang/papers/uai00-pegasus.pdf).
 
 ## Components
 The environment consists of the following components.
